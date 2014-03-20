@@ -1,0 +1,110 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pixelshift</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An online image-processing tool">
+    <meta name="author" content="Florian Wokurka">
+    <link rel="shortcut icon" href="./assets/ico/favicon.png">
+
+    <!-- styles -->
+    <link href="./assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="./assets/lib/jquery-ui/css/smoothness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="./assets/lib/icomoon/style.css" rel="stylesheet">
+    <link href="./assets/lib/farbtastic/farbtastic.css" rel="stylesheet"> 
+    <link href="./assets/lib/jCrop/jquery.Jcrop.css" rel="stylesheet">
+        
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+
+  <div class="container" class="page-container">
+    <div id='container'  class="content-container">
+      <!-- filled with js -->
+    </div>
+    <div id="footerLink">
+      <hr>
+      <footer>
+        <p>Written by <a href="https://github.com/notiontaxi">Florian Wokurka</a></p>
+      </footer>
+    </div>
+
+    <!-- currently used for overlay elements on mobile interface -->
+    <div id="overlay-elements"> </div>
+         
+  </div> 
+
+  
+
+<!-- dummy element for navigation (have a lok at Router.js)
+    may be usefull later (for more tasks)-->
+<div>Version 2.6<div>
+<div id="image-processing"><a href="#image-processing"></a></div>
+
+<div id='grey-panel'></div> 
+<div id='grey-panel-menu'></div> 
+<div class='modalbox-overlay'></div>
+
+<div id="color-picker-modal" class="hidden modalbox-wrapper">
+  <div class="header clearfix">
+    <div class="left-float">Choose a color</div>
+    <button class="action-close-color-picker right-float btn btn-danger inline-button right-upper" type="button">&nbsp;<i class="icon-close"></i>&nbsp;</button>
+  </div>
+  <div class="content">
+    <form action="">
+    <div id="picker"></div>
+    <div class="form-item">
+      <input type="text" id="color-picker-color" name="color1" class="colorwell center-block colorwell-selected" value=" " />
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="toolbar" class="modalbox-wrapper hidden">
+  <div class="header clearfix">
+    <div class="left-float"></div>
+    <button class="action-close-toolbar right-float btn btn-danger inline-button right-upper" type="button">&nbsp;<i class="icon-close"></i>&nbsp;</button>
+  </div>
+  <div class="content">
+
+  </div>
+</div>
+
+
+
+<!-- LIB  -->
+
+    <script src="./assets/lib/jquery/jquery-2.1.0.min.js"></script>
+    <!-- touch events, orientation support, tab winged for mobile -->
+    <script src="./assets/lib/jquery-mobile/jquery.mobile.custom.min.js"></script>
+    <!-- https://jqueryui.com/download/#!version=1.10.4&components=1111100000010001100111111111111111 
+         slider, drag & drop -->
+    <script src="./assets/lib/jquery-ui/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <!-- touchmove support for jquery widgets (mouse simulation) -->
+    <script src="./assets/lib/jquery.ui.touch-punch.min.js"></script>
+    
+    <!-- http://getbootstrap.com/customize/?id=9414107#download -->
+    <script src="./assets/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- for key bindings -->
+    <script src="./assets/lib/mousetrap1.4.6.min.js"></script>
+
+    <!-- for dependency management and lazy loading-->
+    <script src="./assets/lib/require2.1.11.min.js"></script>
+
+    <!-- color picker -->
+    <script src="./assets/lib/farbtastic/farbtastic.js"></script>
+
+<!-- OWN -->
+    <script src="./assets/js/init.js"></script>
+    <script src="./assets/js/Router.js"></script>
+
+    <script src="cordova.js"></script>
+    
+
+  </body>
+</html>
