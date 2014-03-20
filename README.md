@@ -1,4 +1,4 @@
-# [Pixelshift](http://notiontaxi.github.io/pixelshift)
+[Pixelshift](http://notiontaxi.github.io/pixelshift) portet for Phonegap
 
-An online image processing tool
+[PhoneGap project](https://build.phonegap.com/apps/833488)
 
